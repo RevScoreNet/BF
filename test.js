@@ -73,6 +73,6 @@ import * as ecc from 'tiny-secp256k1';
 const ECPair = ECPairFactory(ecc);
 
 const keyPair = ECPair.makeRandom();
-console.log(keyPair);
+console.log("keyPair:", keyPair);
 
 //const { address } = bitcoin.payments.p2pkh({ pubkey: keyPair.publicKey });
