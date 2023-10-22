@@ -26,3 +26,9 @@ model.fit(xs, ys).then(() => {
   model.predict(tf.tensor2d([5], [1, 1])).print();
 });
 
+/*
+privateKey [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+            ^
+            |
+publicKey  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+*/
