@@ -66,7 +66,9 @@ console.log(`BTC Private Key (starting with '5'): 0x${privateKey}`);
 
 // https://github.com/jprichardson/procbits.com/blob/master/articles/2013/08/generating-a-bitcoin-address-with-javascript.md
 
-import ECPairFactory from 'ecpair';
+// https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/addresses.spec.ts
+
+import { ECPairFactory } from 'ecpair';
 //import * as bitcoin from '../..';
 import * as ecc from 'tiny-secp256k1';
 
