@@ -4,7 +4,10 @@ import { dirname, resolve } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const config = {
+export default {
+  experiments: {
+    asyncWebAssembly: true
+  },
   mode: 'production',
   entry: './test.js',
   output: {
@@ -12,5 +15,3 @@ const config = {
     filename: 'test.min.js'
   }
 };
-
-export default config;

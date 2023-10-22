@@ -26,6 +26,8 @@ model.fit(xs, ys).then(() => {
   model.predict(tf.tensor2d([5], [1, 1])).print();
 });
 */
+
+/*
 function rnd256() {
     const bytes = new Uint8Array(32);
 
@@ -60,6 +62,17 @@ function generatePrivateKey() {
   
 let privateKey = generatePrivateKey();
 console.log(`BTC Private Key (starting with '5'): 0x${privateKey}`);
-
+*/
 
 // https://github.com/jprichardson/procbits.com/blob/master/articles/2013/08/generating-a-bitcoin-address-with-javascript.md
+
+import ECPairFactory from 'ecpair';
+//import * as bitcoin from '../..';
+import * as ecc from 'tiny-secp256k1';
+
+const ECPair = ECPairFactory(ecc);
+
+const keyPair = ECPair.makeRandom();
+console.log(keyPair);
+
+//const { address } = bitcoin.payments.p2pkh({ pubkey: keyPair.publicKey });
